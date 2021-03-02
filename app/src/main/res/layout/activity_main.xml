@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/text_login_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_text"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_login_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/btn_enter"
+            android:textColor="@color/white"
+            android:background="@color/purple_700">
+
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/cpv_login"
+            android:layout_width="@dimen/loaded_size"
+            android:layout_height="@dimen/loaded_size"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:progressTint="@color/purple_700"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+
+    </LinearLayout>
+
+</FrameLayout>
