@@ -7,8 +7,11 @@ import com.example.kotlin_vk_sdk_template.models.FriendModel
 
 @StateStrategyType(value = AddToEndSingleStrategy::class)
 interface FriendsView:MvpView {
-    fun showError(text:String)
-    fun setupEmptyList()
+    fun showError(textResource:Int)
+    fun setupEmptyList(friendsList: ArrayList<FriendModel>)
     fun setupFriendsList(friendsList: ArrayList<FriendModel>)
+    fun startLoading()
+    fun endLoading()
+
 
 }

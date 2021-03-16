@@ -3,4 +3,7 @@
     <string name="login_text">Вас приветствует приложение \"Друзья Вк\"\n Пожалуйста, нажмите кнопку Войти, чтобы увидеть ваших друзей</string>
     <string name="btn_enter">Войти</string>
     <string name="friends_search_hint">Enter your query here</string>
+    <string name="friends_no_items">Список друзей пуст</string>
+    <string name="login_error_credentials">Ошибка при попытке логина в ВК</string>
+    <string name="friend_no_city">Город не указан</string>
 </resources>

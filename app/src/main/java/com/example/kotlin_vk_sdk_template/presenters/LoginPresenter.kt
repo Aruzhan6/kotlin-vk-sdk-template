@@ -2,6 +2,7 @@ package com.example.kotlin_vk_sdk_template.presenters
 
 import com.arellomobile.mvp.InjectViewState
 import com.arellomobile.mvp.MvpPresenter
+import com.example.kotlin_vk_sdk_template.R
 import com.example.kotlin_vk_sdk_template.views.LoginView
 import java.util.logging.Handler
 
@@ -16,7 +17,7 @@ class LoginPresenter:MvpPresenter<LoginView>() {
           if (isSuccess){
               viewState.openFriends()
           } else{
-              viewState.showError(text = "Login data is incorrect")
+              viewState.showError(textResource = R.string.login_error_credentials)
           }
 
        },500)

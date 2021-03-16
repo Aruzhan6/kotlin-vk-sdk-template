@@ -37,6 +37,7 @@
             android:layout_height="@dimen/loaded_size"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
+            android:indeterminateOnly="true"
             android:progressTint="@color/purple_700"
             android:visibility="gone">
 
